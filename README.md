@@ -9,148 +9,68 @@ Le principe du jeu de la vie est simple. L’univers est défini sur une grille 
 - Le voisinage utilise est le 8-voisinage : pour une cellule donnée, ses voisines sont les 8 cellules
   qui l’entourent.
 
+![demo](demo.png)
+
 # Commandes importantes
 
 ### Mode graphique Cairo
 
-Compiler
+Compiler : `make`
 
-```
-make
-```
+Lancer le jeu : `bin/main <fichier grille>`
 
-Lancer le jeu
-
-```
-bin/main <fichier grille>
-```
-
-Exemple
-
-```
-bin/main grilles/grille4.txt
-```
+Exemple : `bin/main grilles/grille4.txt`
 
 ### Mode texte
 
-Compiler
+Compiler : `make MODE=TEXTE`
 
-```
-make MODE=TEXTE
-```
+Lancer le jeu : `bin/main <fichier grille>`
 
-Lancer le jeu
-
-```
-bin/main <fichier grille>
-```
-
-Exemple
-
-```
-bin/main grilles/grille4.txt
-```
+Exemple : `bin/main grilles/grille4.txt`
 
 # Touches importantes du programme
 
 ### Mode graphique Cairo
 
-Faire évoluer la grille
+Faire évoluer la grille `entrée ou clic gauche`
 
-```
-entrée ou clic gauche
-```
+Activer/désactiver le mode cyclique `c`
 
-Activer/désactiver le mode cyclique
+Activer/désactiver le vieillissement `v`
 
-```
-c
-```
+Afficher la période d'oscillement `o`
 
-Activer/désactiver le vieillissement
+Quitter le programme `q ou clic droit`
 
-```
-v
-```
+Charger une nouvelle grille `n puis <fichier grille>`
 
-Afficher la période d'oscillement
-
-```
-o
-```
-
-Quitter le programme
-
-```
-q ou clic droit
-```
-
-Charger une nouvelle grille
-
-```
-n puis <fichier grille>
-```
-
-Annuler le changement de grille
-
-```
-touche échap
-```
+Annuler le changement de grille `touche échap`
 
 ### Mode texte
 
-Faire evoluer la grille
+Faire evoluer la grille `entrée`
 
-```
-entrée
-```
+Activer/désactiver le mode cyclique `c`
 
-Activer/désactiver le mode cyclique
+Activer/désactiver le vieillissement `v`
 
-```
-c
-```
+Quitter le programme `q`
 
-Activer/désactiver le vieillissement
+Charger une nouvelle grille `n puis <fichier grille>`
 
-```
-v
-```
-
-Quitter le programme
-
-```
-q
-```
-
-Charger une nouvelle grille
-
-```
-n puis <fichier grille>
-```
-
-Annuler le changement de grille
-
-```
-touche échap
-```
+Annuler le changement de grille `touche échap`
 
 # Générer la documentation
 
-Le paquet Doxygen est requis pour générer la documentation
+`make docs`
 
-```
-make docs
-```
+(Le paquet Doxygen est requis pour générer la documentation)
 
 # Générer une archive (tarball)
 
-```
-make dist
-```
+`make dist`
 
 # Nettoyer les artefacts de compilation et l'archive
 
-```
-make clean
-```
+`make clean`
